@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contato — Eliab Monitoramento</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-page">
+  <header class="site-header light">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/eliab.jpeg" alt="Eliab Logo" class="logo">
+        <span class="brand-text dark">Eliab Monitoramento</span>
+      </a>
+      <nav class="main-nav" id="mainNav4">
+        <a href="servicos.html">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button id="mobileBtn4" class="mobile-btn" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container light-content">
+    <section class="section">
+      <h1>Fale Conosco</h1>
+      <p class="section-sub dark">Solicite um orçamento ou tire suas dúvidas.</p>
+
+      <form id="contactForm" class="contact-form" onsubmit="event.preventDefault(); alert('Formulário enviado (mock)');">
+        <label>Nome</label>
+        <input type="text" required placeholder="Seu nome">
+        <label>Email</label>
+        <input type="email" required placeholder="seu@email.com">
+        <label>Telefone</label>
+        <input type="tel" placeholder="(00) 00000-0000">
+        <label>Mensagem</label>
+        <textarea rows="5" required placeholder="Descreva sua necessidade"></textarea>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> contato@eliabmonitoramento.com</p>
+        <p><strong>Telefone:</strong> (00) 00000-0000</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer light">
+    <div class="container footer-inner">
+      <p class="muted dark">© 2025 Eliab Monitoramento — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5599999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M20.52 3.48A11.77 11.77 0 0012 0C5.37 0 .05 5.32.05 11.95c0 2.1.55 4.14 1.6 5.95L0 24l6.27-1.66A11.92 11.92 0 0012 24c6.63 0 11.95-5.32 11.95-11.95 0-3.2-1.26-6.2-3.43-8.57zM12 21.6c-1.12 0-2.22-.3-3.16-.88l-.24-.14L5.1 20.7l.9-3.36-.15-.27A8.1 8.1 0 013 11.95C3 7.07 7.07 3 11.95 3 16.83 3 20.9 7.07 20.9 11.95 20.9 16.83 16.83 21.6 12 21.6z"/></svg>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
