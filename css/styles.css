@@ -134,3 +134,11 @@ body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg-d
     margin-top: 12px;
     align-items: center;
 }
+
+.texto1 {
+    text-align: center;
+}
+
+.texto2 {
+    text-align: center;
+}
