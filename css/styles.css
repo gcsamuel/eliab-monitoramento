@@ -127,7 +127,7 @@ body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg-d
     text-align: center;
 }
 
-imagens {
+.imagens {
     width: 100%;
     height: auto;
     border-radius: 8px;
