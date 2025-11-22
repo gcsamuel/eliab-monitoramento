@@ -126,3 +126,10 @@ body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg-d
     margin-bottom: 8px;
     text-align: center;
 }
+
+imagens {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 12px;
+}
