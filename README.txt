@@ -8,7 +8,7 @@ Arquivos incluídos:
 - contato.html
 - css/styles.css
 - js/script.js
-- assets/eliab.jpeg  (logo copiada do upload)
+- assets/eliab.png  (logo copiada do upload)
 
 OBS: Substitua o link do WhatsApp nas páginas (atualmente usa um número exemplo: 5599999999999).
 Se quiser seu número real, troque o href da classe .whatsapp-float para:
