@@ -38,4 +38,32 @@ document.addEventListener('DOMContentLoaded', function(){
   setupMobile('mobileBtn2','mainNav2');
   setupMobile('mobileBtn3','mainNav3');
   setupMobile('mobileBtn4','mainNav4');
+
+  // Form submit -> POST /api/send
+  var form = document.getElementById('quoteForm');
+  if (form) {
+    var resp = document.getElementById('response');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      resp.textContent = 'Enviando...';
+      var data = new FormData(form);
+      var body = JSON.stringify(Object.fromEntries(data.entries()));
+      fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: body
+      }).then(function(r){
+        return r.json();
+      }).then(function(json){
+        if (json.ok) {
+          resp.textContent = 'Mensagem enviada. Obrigado.';
+          form.reset();
+        } else {
+          resp.textContent = 'Erro ao enviar: ' + (json.error || 'tente novamente');
+        }
+      }).catch(function(){
+        resp.textContent = 'Erro de conexão.';
+      });
+    });
+  }
 });
